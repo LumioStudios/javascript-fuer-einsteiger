@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Passwort-Ampel</title>
+  <style>
+    #regeln li {
+      color: gray;
+    }
+
+    #regeln li.erfuellt {
+      color: green;
+    }
+  </style>
+  <script src="ampel.js" defer></script>
+</head>
+<body>
+  <h1>Passwort-Ampel</h1>
+  <label for="passwort">Passwort</label>
+  <input type="password" id="passwort">
+  <button type="button" id="zeigen">
+    Passwort anzeigen
+  </button>
+  <ul id="regeln"></ul>
+  <p id="staerke"></p>
+</body>
+</html>

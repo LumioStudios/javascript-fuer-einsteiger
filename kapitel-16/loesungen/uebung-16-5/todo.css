@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.erledigt {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.aktiv {
+  font-weight: bold;
+}
+
+.hoch {
+  color: red;
+}
+
+.niedrig {
+  font-size: 0.85em;
+}

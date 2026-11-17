@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulare ausprobieren</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+  </style>
+  <script src="formular.js" defer></script>
+</head>
+<body>
+  <h1>Formulare ausprobieren</h1>
+  <form id="formular">
+    <label for="vorname">Vorname</label>
+    <input type="text" id="vorname" name="vorname">
+
+    <label for="alter">Alter</label>
+    <input type="number" id="alter" name="alter">
+
+    <label for="nachricht">Nachricht</label>
+    <textarea id="nachricht" name="nachricht"></textarea>
+
+    <label>
+      <input type="checkbox" id="newsletter">
+      Newsletter abonnieren
+    </label>
+
+    <p>Wie hast du von uns erfahren?</p>
+    <label>
+      <input type="radio" name="quelle" value="freunde">
+      Von Freunden
+    </label>
+    <label>
+      <input type="radio" name="quelle" value="suche"
+             checked>
+      Suchmaschine
+    </label>
+    <label>
+      <input type="radio" name="quelle" value="buch">
+      Aus einem Buch
+    </label>
+
+    <label for="land">Land</label>
+    <select id="land">
+      <option value="">Bitte wählen</option>
+      <option value="de">Deutschland</option>
+      <option value="at">Österreich</option>
+      <option value="ch">Schweiz</option>
+    </select>
+
+    <p>Interessen:</p>
+    <label>
+      <input type="checkbox" name="thema" value="web">
+      Webseiten
+    </label>
+    <label>
+      <input type="checkbox" name="thema" value="spiele">
+      Spiele
+    </label>
+    <label>
+      <input type="checkbox" name="thema" value="daten">
+      Daten
+    </label>
+
+    <p><button type="submit">Absenden</button></p>
+  </form>
+  <p id="ausgabe"></p>
+</body>
+</html>

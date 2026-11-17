@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Einkaufsliste</title>
+  <style>
+    .erledigt {
+      color: gray;
+      text-decoration: line-through;
+    }
+
+    .nummer {
+      color: gray;
+      margin-right: 8px;
+    }
+
+    .versteckt {
+      display: none;
+    }
+
+    #liste li {
+      cursor: pointer;
+    }
+
+    .loeschen {
+      margin-left: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    .fehler {
+      color: darkred;
+      margin: 4px 0;
+    }
+
+    .ungueltig {
+      outline: 2px solid darkred;
+    }
+  </style>
+  <script src="liste.js" defer></script>
+</head>
+<body>
+  <h1>Einkaufsliste</h1>
+
+  <form id="neu" novalidate>
+    <label for="artikelName">Artikel</label>
+    <input type="text" id="artikelName">
+    <p class="fehler" id="artikelName-fehler"></p>
+
+    <label for="menge">Menge</label>
+    <input type="number" id="menge" value="1">
+    <p class="fehler" id="menge-fehler"></p>
+
+    <button type="submit">Hinzufügen</button>
+  </form>
+
+  <p id="zaehler"></p>
+  <ul id="liste"></ul>
+  <p id="leer" class="versteckt">Die Liste ist leer.</p>
+  <button type="button" id="aufraeumen">
+    Erledigte entfernen
+  </button>
+</body>
+</html>

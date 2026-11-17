@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza-Rechner</title>
+  <style>
+    label {
+      display: block;
+    }
+
+    #preis {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+  <script src="pizza.js" defer></script>
+</head>
+<body>
+  <h1>Pizza bestellen</h1>
+  <form id="bestellung">
+    <p>Größe:</p>
+    <label>
+      <input type="radio" name="groesse" value="klein">
+      Klein (8 €)
+    </label>
+    <label>
+      <input type="radio" name="groesse" value="mittel"
+             checked>
+      Mittel (10 €)
+    </label>
+    <label>
+      <input type="radio" name="groesse" value="gross">
+      Groß (13 €)
+    </label>
+
+    <p>Beläge (je 1,50 €):</p>
+    <label>
+      <input type="checkbox" name="belag" value="Salami">
+      Salami
+    </label>
+    <label>
+      <input type="checkbox" name="belag" value="Pilze">
+      Pilze
+    </label>
+    <label>
+      <input type="checkbox" name="belag" value="Paprika">
+      Paprika
+    </label>
+    <label>
+      <input type="checkbox" name="belag" value="Oliven">
+      Oliven
+    </label>
+    <label>
+      <input type="checkbox" name="belag"
+             value="Extra-Käse">
+      Extra-Käse
+    </label>
+
+    <p>
+      <label>
+        <input type="checkbox" id="lieferung">
+        Lieferung (2,50 €)
+      </label>
+    </p>
+
+    <p id="preis"></p>
+    <button type="submit">Bestellen</button>
+  </form>
+  <p id="zusammenfassung"></p>
+</body>
+</html>

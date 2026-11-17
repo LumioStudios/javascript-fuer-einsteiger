@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulare ausprobieren</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+  </style>
+  <script src="formular.js" defer></script>
+</head>
+<body>
+  <h1>Formulare ausprobieren</h1>
+  <!-- novalidate: Wir prüfen selbst in JavaScript.
+       Entferne es, um die Prüfung des Browsers
+       zu sehen. -->
+  <form id="formular" novalidate>
+    <label for="vorname">Vorname</label>
+    <input type="text" id="vorname" name="vorname"
+           required minlength="2">
+
+    <label for="alter">Alter</label>
+    <input type="number" id="alter" name="alter"
+           required min="12" max="120">
+
+    <p><button type="submit">Absenden</button></p>
+  </form>
+  <p id="ausgabe"></p>
+</body>
+</html>

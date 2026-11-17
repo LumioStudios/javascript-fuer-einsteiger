@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zähler</title>
+  <style>
+    #anzeige {
+      font-size: 64px;
+      font-weight: bold;
+      margin: 16px 0;
+    }
+
+    .grenze {
+      color: darkred;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 8px 16px;
+    }
+  </style>
+  <script src="zaehler.js" defer></script>
+</head>
+<body>
+  <h1>Zähler</h1>
+  <p id="anzeige">0</p>
+  <button type="button" id="minus">−1</button>
+  <button type="button" id="plus">+1</button>
+  <button type="button" id="zurueck">Auf 0</button>
+  <p id="info"></p>
+</body>
+</html>

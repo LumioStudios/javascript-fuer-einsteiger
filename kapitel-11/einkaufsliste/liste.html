@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Einkaufsliste</title>
+  <style>
+    .erledigt {
+      color: gray;
+      text-decoration: line-through;
+    }
+
+    .nummer {
+      color: gray;
+      margin-right: 8px;
+    }
+
+    .versteckt {
+      display: none;
+    }
+  </style>
+  <script src="liste.js" defer></script>
+</head>
+<body>
+  <h1>Einkaufsliste</h1>
+  <p id="zaehler"></p>
+  <ul id="liste"></ul>
+  <p id="leer" class="versteckt">Die Liste ist leer.</p>
+</body>
+</html>

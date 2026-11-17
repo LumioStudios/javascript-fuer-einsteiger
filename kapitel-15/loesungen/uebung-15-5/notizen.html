@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meine Notizen</title>
+  <style>
+    .wichtig {
+      font-weight: bold;
+    }
+  </style>
+  <script src="notizen.js" defer></script>
+</head>
+<body>
+  <h1>Meine Notizen</h1>
+
+  <form id="formular">
+    <label for="eingabe">Neue Notiz</label><br>
+    <textarea id="eingabe" rows="3"></textarea><br>
+    <label>
+      <input type="checkbox" id="wichtig"> Wichtig
+    </label><br>
+    <button type="submit">Speichern</button>
+  </form>
+
+  <p id="meldung"></p>
+  <p id="anzahl"></p>
+  <ul id="liste"></ul>
+
+  <button type="button" id="alleLoeschen">
+    Alle Notizen löschen
+  </button>
+</body>
+</html>

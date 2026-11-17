@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulare ausprobieren</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .fehler {
+      color: darkred;
+      margin: 4px 0;
+    }
+
+    .ungueltig {
+      outline: 2px solid darkred;
+    }
+  </style>
+  <script src="formular.js" defer></script>
+</head>
+<body>
+  <h1>Formulare ausprobieren</h1>
+  <form id="formular" novalidate>
+    <label for="vorname">Vorname</label>
+    <input type="text" id="vorname" name="vorname">
+    <p class="fehler" id="vorname-fehler"></p>
+
+    <label for="alter">Alter</label>
+    <input type="number" id="alter" name="alter">
+    <p class="fehler" id="alter-fehler"></p>
+
+    <p><button type="submit">Absenden</button></p>
+  </form>
+  <p id="ausgabe"></p>
+</body>
+</html>

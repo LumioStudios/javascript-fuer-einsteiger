@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meine To-do-Liste</title>
+  <link rel="stylesheet" href="todo.css">
+  <script src="todo.js" defer></script>
+</head>
+<body>
+  <h1>Meine To-do-Liste</h1>
+
+  <form id="formular">
+    <label for="eingabe">Neue Aufgabe</label>
+    <input type="text" id="eingabe">
+    <button type="submit">Hinzufügen</button>
+  </form>
+  <p id="meldung"></p>
+
+  <p>
+    <button type="button" id="filterAlle">Alle</button>
+    <button type="button" id="filterOffen">Offen</button>
+    <button type="button" id="filterErledigt">
+      Erledigt
+    </button>
+  </p>
+
+  <ul id="liste"></ul>
+  <p id="zaehler"></p>
+  <button type="button" id="erledigteLoeschen">
+    Erledigte löschen
+  </button>
+</body>
+</html>

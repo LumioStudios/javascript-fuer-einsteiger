@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kurznachricht</title>
+  <style>
+    .warnung {
+      color: darkorange;
+    }
+
+    .zuviel {
+      color: darkred;
+      font-weight: bold;
+    }
+  </style>
+  <script src="nachricht.js" defer></script>
+</head>
+<body>
+  <h1>Kurznachricht</h1>
+  <form id="formular">
+    <textarea id="text" rows="4" cols="40"></textarea>
+    <p id="zaehler"></p>
+    <button type="submit" id="senden">Senden</button>
+  </form>
+  <ul id="nachrichten"></ul>
+</body>
+</html>

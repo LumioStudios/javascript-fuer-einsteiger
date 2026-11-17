@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Währungsrechner</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .fehler {
+      color: darkred;
+    }
+  </style>
+  <script src="loesung-14-5-zusatz.js" defer></script>
+</head>
+<body>
+  <h1>Währungsrechner</h1>
+  <form id="rechner" novalidate>
+    <label for="betrag">Betrag in Fremdwährung</label>
+    <input type="text" id="betrag">
+
+    <label for="kurs">Kurs (Fremdwährung pro Euro)</label>
+    <input type="text" id="kurs" value="1.08">
+
+    <p><button type="submit">Umrechnen</button></p>
+  </form>
+  <p id="ergebnis"></p>
+</body>
+</html>

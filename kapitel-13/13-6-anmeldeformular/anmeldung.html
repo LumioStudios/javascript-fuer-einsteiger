@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kursanmeldung</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    .fehler {
+      color: darkred;
+      margin: 4px 0;
+    }
+
+    .ungueltig {
+      outline: 2px solid darkred;
+    }
+
+    #erfolg {
+      color: darkgreen;
+      font-weight: bold;
+    }
+  </style>
+  <script src="anmeldung.js" defer></script>
+</head>
+<body>
+  <h1>Anmeldung: JavaScript am Abend</h1>
+
+  <form id="anmeldung" novalidate>
+    <label for="name">Name</label>
+    <input type="text" id="name">
+    <p class="fehler" id="name-fehler"></p>
+
+    <label for="email">E-Mail-Adresse</label>
+    <input type="email" id="email">
+    <p class="fehler" id="email-fehler"></p>
+
+    <label for="passwort">Passwort</label>
+    <input type="password" id="passwort">
+    <p class="fehler" id="passwort-fehler"></p>
+
+    <label for="wiederholung">Passwort wiederholen</label>
+    <input type="password" id="wiederholung">
+    <p class="fehler" id="wiederholung-fehler"></p>
+
+    <label for="kurs">Kurs</label>
+    <select id="kurs">
+      <option value="">Bitte wählen</option>
+      <option value="start">Grundlagen</option>
+      <option value="dom">Webseiten mit dem DOM</option>
+      <option value="projekt">Projektwerkstatt</option>
+    </select>
+    <p class="fehler" id="kurs-fehler"></p>
+
+    <p>Termin:</p>
+    <label>
+      <input type="radio" name="termin"
+             value="Montag" checked>
+      Montag, 18 Uhr
+    </label>
+    <label>
+      <input type="radio" name="termin"
+             value="Mittwoch">
+      Mittwoch, 19 Uhr
+    </label>
+
+    <label>
+      <input type="checkbox" id="datenschutz">
+      Ich stimme der Datenschutzerklärung zu.
+    </label>
+    <p class="fehler" id="datenschutz-fehler"></p>
+
+    <p><button type="submit">Anmelden</button></p>
+  </form>
+
+  <p id="erfolg"></p>
+</body>
+</html>
